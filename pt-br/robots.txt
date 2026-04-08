@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://48hour.github.io/sitemap.xml
