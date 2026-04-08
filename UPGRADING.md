@@ -20,7 +20,9 @@ A few changes were made necessary by the switch to `polyglot`. More specifically
 Another change was the usage of translated strings in the pages. Before, the translated strings were used in the pages by using the `t` filter, like `{% t titles.about %}`, and these strings were defined inside [\_i18n/LANG.yml](https://github.com/george-gca/multi-language-al-folio/blob/8f1528a4816aaf16e916791ae0f8cddbecf2416a/_i18n/en-us.yml). Now, when possible, the translated strings are used directly in the pages for that language. When a string is used at the layout level, like in the [\_layouts/about.liquid](_layouts/about.liquid) file, we now have to call for the translated string inside [\_data/LANG/strings.yml](https://github.com/george-gca/multi-language-al-folio/blob/main/_data/en-us/strings.yml). What previously was:
 
 ```liquid
+{% raw %}
 {% t main.contact_note %}
+{% endraw %}
 ```
 
 now is:
